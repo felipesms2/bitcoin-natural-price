@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('histories', function (Blueprint $table) {
             $table->id();
+                $table->date('date_time_ref');
+                $table->decimal('usd_price');
+                $table->decimal('array_position');
+                $table->decimal('array_lenght');
+                $table->decimal('scale');
             $table->timestamps();
         });
     }
