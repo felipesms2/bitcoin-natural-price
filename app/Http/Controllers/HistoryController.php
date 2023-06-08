@@ -40,10 +40,13 @@ class HistoryController extends Controller
     public function show(History $history)
     {
         $data = User::all();
+        $calc = 5*10;
+        // dd($data[0]->name);
         return view('main',
         [
             "nome" => "ciclano",
-            "data" => $data
+            "data" => $data,
+            "calc" => $calc
         ]);
     }
 
