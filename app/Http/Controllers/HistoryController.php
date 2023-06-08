@@ -39,7 +39,12 @@ class HistoryController extends Controller
      */
     public function show(History $history)
     {
-        return User::all();
+        $data = User::all();
+        return view('main',
+        [
+            "nome" => "ciclano",
+            "data" => $data
+        ]);
     }
 
     /**
