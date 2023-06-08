@@ -17,7 +17,6 @@ return new class extends Migration
                 $table->decimal('usd_price');
                 $table->decimal('array_position');
                 $table->decimal('array_lenght');
-                $table->decimal('scale');
             $table->timestamps();
         });
     }

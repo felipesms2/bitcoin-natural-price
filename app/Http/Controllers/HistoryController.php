@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreHistoryRequest;
 use App\Http\Requests\UpdateHistoryRequest;
 use App\Models\History;
+use App\Models\User;
+
 
 class HistoryController extends Controller
 {
@@ -37,7 +39,7 @@ class HistoryController extends Controller
      */
     public function show(History $history)
     {
-        //
+        return User::all();
     }
 
     /**
